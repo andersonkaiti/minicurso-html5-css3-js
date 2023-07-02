@@ -1,0 +1,287 @@
+:root {
+    --main-color: #0717AB;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Roboto';
+    background-color: #f5f6f7;
+    min-height: 100vh;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h1 {
+    margin: 10px 0px;
+    margin-left: 20px;
+}
+
+.container {
+    min-width: 250px;
+    max-width: 1250px;
+    margin: auto;
+    white-space: nowrap;
+}
+
+/* HEADER */
+
+header {
+    background-color: #fff;
+    height: 90px;
+    box-shadow: 0 1px 4px 3px rgba(0, 0, 0, .2);
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+.menu-imagem, .menu-opcoes {
+    display: inline-block;
+}
+
+.logo {
+    width: 170px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.menu-opcoes {
+    float: right;
+    margin-top: 35px;
+}
+
+.menu-opcoes ul {
+    list-style-type: none;
+    margin-right: 10px;
+}
+
+.menu-opcoes ul li {
+    display: inline;
+    padding: 20px 10px;
+}
+
+.menu-opcoes ul li a {
+    color: #000;
+}
+
+.menu-opcoes ul li a:hover, .menu-opcoes ul li a.active {
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+/* FIM HEADER*/
+
+/* MAIN */
+
+main {
+    padding-bottom: 200px;
+}
+
+.viagem {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 15px;
+    height: 240px;
+    background-color: #fff;
+}
+
+.viagem:hover {
+    box-shadow: 0px 0px 3px 3px rgba(0,0,0,.2);
+}
+
+.viagem-imagem {
+    height: 240px;
+    width: 40%;
+    border-radius: 15px 0px 0px 15px;
+    object-fit: cover;
+    white-space: nowrap;
+}
+
+.viagem-info {
+    width: 60%;
+    display: inline-block;
+    padding-right: 40px;
+    vertical-align: top;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+.info-servicos {
+    list-style-type: none;
+    margin-top: 15px;
+}
+
+.info-servicos li {
+    margin-top: 5px;
+}
+
+.info-descricao, .info-precos {
+    display: inline-block;
+    width: 50%;
+}
+
+.info-descricao {
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+.info-precos {
+    vertical-align: top;
+    text-align: right;
+}
+
+.preco-antigo {
+    margin-top: 15px;
+    text-decoration: line-through;
+    color: #ccc;
+    font-size: 0.9em;
+}
+
+.preco-novo {
+    margin-top: 3px;
+    font-size: 1.5em;
+}
+
+.info-botao {
+    text-align: right;
+}
+
+.button {
+    padding: 15px 10px;
+    background: #fff;
+    border: 1px solid var(--main-color) ;
+    border-radius: 15px;
+    margin-right: -20px;
+    margin-top: -20px;
+    cursor: pointer;
+    width: 120px;
+}
+
+.button:hover {
+    background: var(--main-color);
+    color: #fff;
+}
+
+#contato {
+    margin-left: 200px;
+    width: 48%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* FIM MAIN */
+
+/* FOOTER */
+
+
+footer {
+    background-color: #fff;
+    box-shadow: 0 1px 4px 3px rgba(0,0,0,.2);
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: var(--main-color);
+}
+
+.footer-logo {
+    text-align: center;
+}
+
+.footer-logo img {
+    padding-top: 30px;
+    width: 250px;
+}
+
+/* FIM FOOTER */
+
+@media (max-width: 900px) {
+    #cont {
+        margin: 20px 0px 0px 0px;
+        display: block;
+    }
+    
+    iframe {
+        width: 650px;
+    }
+}
+
+@media (max-width: 800px) {
+    .info-precos {
+        display: block;
+        text-align: left;
+        margin-left: 10px;
+    }
+
+    .viagem, .viagem-imagem {
+        height: 340px;
+    }
+
+    .button {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 700px) {
+    .viagem {
+        height: 520px;
+    }
+
+    .button {
+        margin-top: -20px;
+    }
+    
+    .viagem-info {
+        display: block;
+        width: 100%;
+        height: 60%;
+    }
+
+    .viagem-imagem {
+        width: 100%;
+        height: 40%;
+        border-radius: 15px 15px 0px 0px;
+    }
+
+    iframe {
+        width: 450px;
+    }
+}
+
+@media (max-width: 500px) {
+    iframe {
+        width: 350px;
+    }
+}
+
+@media (max-width: 400px) {
+    header {
+        height: 120px;
+    }
+
+    .menu {
+        text-align: center;
+    }
+
+    .menu-opcoes {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .menu-opcoes ul {
+        margin: 0px;
+    }
+    
+    iframe {
+        width: 250px;
+    }
+}
